@@ -179,7 +179,7 @@ Tab.Text = TabName
 Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
 Tab.TextSize = 35.000
 Tab.MouseButton1Click:Connect(function()
-    for i,v in pairs(Containers:GetChildren) do
+    for i,v in pairs(Containers:GetChildren()) do
         v.Visible = false
     end
     Containers:FindFirstChild(TabName).Visible = true
