@@ -20,8 +20,8 @@ local TabContainer = Instance.new("ScrollingFrame")
 local Containers = Instance.new("Frame")
 
 
-Main.Name = "test"
-Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Main.Name = GameName
+Main.Parent = game.CoreGui
 Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 mainbackground.Name = "mainbackground"
