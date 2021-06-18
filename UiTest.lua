@@ -56,13 +56,9 @@ end
 
 ---start---
 
-local StartLib = function()
-    local Library = {}
-    return (Library)
-end
 
 
-local RealZzLib = StartLib()
+local RealZzLib = {}
 
 function RealZzLib:CreateMain(GameName)
 
@@ -128,6 +124,9 @@ UIListLayout.Parent = TabContainer
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0.0199999996, 0)
+UIListLayout.ChildAdded:Connect(function(child)
+    Scale(UIListLayout)
+end)
 
 Containers.Name = "Containers"
 Containers.Parent = mainbackground
@@ -161,11 +160,10 @@ gamename.TextXAlignment = Enum.TextXAlignment.Left
 
 Drag(mainbackground)
 
-local TabLibrary = StartLib()
+local TabLibrary = {}
 
 function TabLibrary:NewTab(TabName)
 
-print("tt")
 local Tab = Instance.new("TextButton")
 local Tab1 = Instance.new("ScrollingFrame")
 local UICorner_2 = Instance.new("UICorner")
@@ -193,7 +191,6 @@ Tab1.Size = UDim2.new(0, 338, 0, 276)
 Tab1.ScrollBarThickness = 5
 Tab1.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
-scale(UIListLayout)
 
 end
 return TabLibrary
