@@ -119,14 +119,14 @@ TabContainer.BorderSizePixel = 0
 TabContainer.Position = UDim2.new(0.0133111477, 0, 0.15625, 0)
 TabContainer.Size = UDim2.new(0, 198, 0, 289)
 TabContainer.ScrollBarThickness = 5
+TabContainer.ChildAdded:Connect(function(child)
+    Scale(TabContainer)
+end)
 
 UIListLayout.Parent = TabContainer
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0.0199999996, 0)
-UIListLayout.ChildAdded:Connect(function(child)
-    Scale(UIListLayout)
-end)
 
 Containers.Name = "Containers"
 Containers.Parent = mainbackground
