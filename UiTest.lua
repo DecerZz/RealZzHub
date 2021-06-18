@@ -178,18 +178,27 @@ Tab.Font = Enum.Font.SourceSans
 Tab.Text = TabName
 Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
 Tab.TextSize = 35.000
+Tab.MouseButton1Click:Connect(function()
+    for i,v in pairs(Containers:GetChildren) do
+        v.Visible = false
+    end
+    Containers:FindFirstChild(TabName).Visible = true
+end)
 
 UICorner_2.Parent = Tab
 
 Tab1.Name = TabName
 Tab1.Parent = Containers
 Tab1.Active = true
+Tab1.Visible = false
 Tab1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Tab1.BackgroundTransparency = 1.000
 Tab1.BorderSizePixel = 0
 Tab1.Size = UDim2.new(0, 338, 0, 276)
 Tab1.ScrollBarThickness = 5
 Tab1.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+
 
 
 end
