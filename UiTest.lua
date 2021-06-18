@@ -7,7 +7,7 @@ end
 
 local RealZzLib = StartLib()
 
-function RealZzLib.Library(GameName)
+function RealZzLib(GameName)
 
 local Main = Instance.new("ScreenGui")
 local mainbackground = Instance.new("ImageLabel")
