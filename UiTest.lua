@@ -181,7 +181,7 @@ Tab.Text = TabName
 Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
 Tab.TextSize = 35.000
 
-UICorner_2.Parent = Tab1
+UICorner_2.Parent = Tab
 
 Tab1.Name = TabName
 Tab1.Parent = Containers
@@ -199,3 +199,10 @@ end
 return TabLibrary
 end
 return RealZzLib
+
+
+
+
+
+
+-----------------------------------
