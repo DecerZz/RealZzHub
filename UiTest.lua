@@ -1,6 +1,6 @@
 ---misc---
 
-local function Drag(obj)
+function Drag(obj)
 
 	local UserInputService = game:GetService("UserInputService")
 	
