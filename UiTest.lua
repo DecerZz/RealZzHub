@@ -48,7 +48,7 @@ function Scale(obj)
 	local Y = 0
 	for i, v in next, obj:GetChildren() do
 		if not v:IsA("UIListLayout") then
-			Y = Y + v.AbsoluteSize.Y + Offs
+			Y = Y + v.AbsoluteSize.Y + Offs + 3
 		end
 	end
 	obj.CanvasSize = UDim2.new(0, 0, 0, Y - Offs)
