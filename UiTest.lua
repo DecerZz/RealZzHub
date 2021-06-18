@@ -193,7 +193,7 @@ Tab1.Size = UDim2.new(0, 338, 0, 276)
 Tab1.ScrollBarThickness = 5
 Tab1.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
-scale(TabContainer)
+coroutine.wrap(scale)(UIListLayout)
 
 end
 return TabLibrary
@@ -206,3 +206,4 @@ return RealZzLib
 
 
 -----------------------------------
+
